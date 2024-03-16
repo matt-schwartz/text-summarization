@@ -71,7 +71,6 @@ This installs a `summarize` binary globally.
     -c, --content-type <type>  sets content type to html or text
     -d, --detailed             print detailed info for top sentences
     -D, --detailedAll          print detailed info for all sentences
-    -m, --media                resolve <a> links using iframely and return best matching media
     -P, --no-pretty-print      disable pretty-printing output
     -h, --help                 output usage information
 ```
@@ -111,12 +110,6 @@ Here's an example of a sentence's internal structure after normalization, proces
   "score": 5.601944765760555
 }
 ```
-
-## Iframely
-
-This module optionally supports using [iframely](https://iframely.com) to get social previews for any external links in the source html, adding the resulting images and summary text to the source pool of candidate sentences.
-
-To enable this, set the `IFRAMELY_BASE_URL` and `IFRAMELY_API_KEY` environment variables.
 
 ## References
 
